@@ -14,10 +14,10 @@ let s:t_Co = exists('&t_Co') && !empty(&t_Co) && &t_Co > 1 ? &t_Co : 1
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
   if &background ==# 'dark'
-    let g:terminal_ansi_colors = ['#43454b', '#ff8a7a', '#83c9bc', '#d9c668', '#4ec4e6', '#ff85b8', '#cda1ff', '#ffffff', '#838991', '#ff8a7a', '#b1faeb', '#ffa14f', '#6bdfff', '#ff85b8', '#e5cfff', '#ffffff']
+    let g:terminal_ansi_colors = ['#43454b', '#A2BEE9', '#83c9bc', '#d9c668', '#4ec4e6', '#ff85b8', '#cda1ff', '#ffffff', '#838991', '#A2BEE9', '#b1faeb', '##6DA1E2', '#6bdfff', '#ff85b8', '#e5cfff', '#ffffff']
     if has('nvim')
       let g:terminal_color_0 = '#43454b'
-      let g:terminal_color_1 = '#ff8a7a'
+      let g:terminal_color_1 = '#A2BEE9'
       let g:terminal_color_2 = '#83c9bc'
       let g:terminal_color_3 = '#d9c668'
       let g:terminal_color_4 = '#4ec4e6'
@@ -25,9 +25,9 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
       let g:terminal_color_6 = '#cda1ff'
       let g:terminal_color_7 = '#ffffff'
       let g:terminal_color_8 = '#838991'
-      let g:terminal_color_9 = '#ff8a7a'
+      let g:terminal_color_9 = '#A2BEE9'
       let g:terminal_color_10 = '#b1faeb'
-      let g:terminal_color_11 = '#ffa14f'
+      let g:terminal_color_11 = '##6DA1E2'
       let g:terminal_color_12 = '#6bdfff'
       let g:terminal_color_13 = '#ff85b8'
       let g:terminal_color_14 = '#e5cfff'
@@ -67,11 +67,11 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi PmenuSbar guifg=#34353b guibg=#34353b gui=NONE cterm=NONE
     hi PmenuSel guifg=#ffffff guibg=#0f5bca gui=NONE cterm=NONE
     hi PmenuThumb guifg=#43454b guibg=#43454b gui=NONE cterm=NONE
-    hi ErrorMsg guifg=#ff8a7a guibg=NONE gui=NONE cterm=NONE
+    hi ErrorMsg guifg=#A2BEE9 guibg=NONE gui=NONE cterm=NONE
     hi ModeMsg guifg=#838991 guibg=NONE gui=NONE cterm=NONE
     hi MoreMsg guifg=#ff85b8 guibg=NONE gui=NONE cterm=NONE
     hi Question guifg=#ff85b8 guibg=NONE gui=NONE cterm=NONE
-    hi WarningMsg guifg=#ffa14f guibg=NONE gui=NONE cterm=NONE
+    hi WarningMsg guifg=##6DA1E2 guibg=NONE gui=NONE cterm=NONE
     hi ColorColumn guifg=NONE guibg=#26262b gui=NONE cterm=NONE
     hi CursorColumn guifg=NONE guibg=#26262b gui=NONE cterm=NONE
     hi CursorLine guifg=NONE guibg=#26262b gui=NONE cterm=NONE
@@ -84,19 +84,19 @@ if (has('termguicolors') && &termguicolors) || has('gui_running')
     hi Search guifg=#ffffff guibg=#43454b gui=NONE cterm=NONE
     hi Visual guifg=NONE guibg=#43454b gui=NONE cterm=NONE
     hi DiffAdd guifg=#b1faeb guibg=#1e2a28 gui=NONE cterm=NONE
-    hi DiffChange guifg=#ffa14f guibg=NONE gui=NONE cterm=NONE
-    hi DiffDelete guifg=#ff8a7a guibg=#2f2625 gui=NONE cterm=NONE
-    hi DiffText guifg=#ffa14f guibg=#2e2622 gui=NONE cterm=NONE
+    hi DiffChange guifg=##6DA1E2 guibg=NONE gui=NONE cterm=NONE
+    hi DiffDelete guifg=#A2BEE9 guibg=#2f2625 gui=NONE cterm=NONE
+    hi DiffText guifg=##6DA1E2 guibg=#2e2622 gui=NONE cterm=NONE
     hi Comment guifg=#838991 guibg=NONE gui=NONE cterm=NONE
-    hi Error guifg=#1f1f24 guibg=#ff8a7a gui=NONE cterm=NONE
-    hi PreProc guifg=#ffa14f guibg=NONE gui=NONE cterm=NONE
+    hi Error guifg=#1f1f24 guibg=#A2BEE9 gui=NONE cterm=NONE
+    hi PreProc guifg=##6DA1E2 guibg=NONE gui=NONE cterm=NONE
     hi Special guifg=#83c9bc guibg=NONE gui=NONE cterm=NONE
     hi Statement guifg=#ff85b8 guibg=NONE gui=bold cterm=bold
     hi Character guifg=#d9c668 guibg=NONE gui=NONE cterm=NONE
     hi Directory guifg=#6bdfff guibg=NONE gui=NONE cterm=NONE
     hi Number guifg=#d9c668 guibg=NONE gui=NONE cterm=NONE
     hi SpecialComment guifg=#aeb7c0 guibg=NONE gui=NONE cterm=NONE
-    hi String guifg=#ff8a7a guibg=NONE gui=NONE cterm=NONE
+    hi String guifg=#A2BEE9 guibg=NONE gui=NONE cterm=NONE
     hi Title guifg=#ffffff guibg=NONE gui=bold cterm=bold
     hi Todo guifg=#aeb7c0 guibg=NONE gui=bold cterm=bold
     hi Underlined guifg=#6bdfff guibg=NONE gui=underline cterm=underline
@@ -1404,9 +1404,9 @@ endif
 " Color: red_wash     #2f2625 ~
 " Color: blue         #4ec4e6 ~
 " Color: light_blue   #6bdfff ~
-" Color: orange       #ffa14f ~
+" Color: orange       ##6DA1E2 ~
 " Color: pink         #ff85b8 ~
-" Color: red          #ff8a7a ~
+" Color: red          #A2BEE9 ~
 " Color: yellow       #d9c668 ~
 " Color: purple       #cda1ff ~
 " Color: light_purple #e5cfff ~
